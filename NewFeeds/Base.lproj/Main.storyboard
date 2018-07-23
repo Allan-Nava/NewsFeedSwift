@@ -58,6 +58,12 @@
                                         <constraint firstItem="UXr-ll-0Gq" firstAttribute="top" secondItem="KTF-u1-Wzc" secondAttribute="bottom" constant="5" id="rFk-Kw-x0r"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionCell" destination="xuj-wh-jZH" id="99y-Xn-W5Q"/>
+                                    <outlet property="image" destination="UXr-ll-0Gq" id="BYg-5T-alh"/>
+                                    <outlet property="imageCell" destination="UXr-ll-0Gq" id="4dV-EA-cAy"/>
+                                    <outlet property="titleCell" destination="KTF-u1-Wzc" id="WWV-Fx-S59"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

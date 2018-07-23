@@ -11,6 +11,10 @@ import UIKit
 class PostCell: UITableViewCell
 {
     
+    @IBOutlet weak var titleCell: UILabel!
+    @IBOutlet weak var descriptionCell: UILabel!
+    @IBOutlet weak var imageCell: UIImageView!
+    
     var post: Post!
     {
         didSet{

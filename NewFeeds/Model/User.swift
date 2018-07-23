@@ -12,5 +12,4 @@ struct User
 {
     var username: String?;
     var profileImage: UIImage?;
-
 }
