@@ -29,16 +29,29 @@ struct Post
             if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
                 //print("Data: \(utf8Text)")
                 let xml = SWXMLHash.parse(utf8Text)
-                for child in xml.children {
-                    print(child.element!.name)
+                
+                //print(xml["rss"].all)
+                
+                let all_items = xml["rss"].children[0]["item"]
+                
+                for item in all_items.all {
+                    let single_post = Post(pubDate: item["pubDate"].element?.text, title: item["title"].element?.text, link: item["link"].element?.text, description: item["description"].element?.text)
+                    posts.append(single_post)
                 }
                 
-                
+                print(posts)
+                //return posts
             }
         
         }
-    
         return posts
+    }
     
+    static func enumerateXML(indexer: XMLIndexer) {
+        for child in indexer.children {
+            print(child.element!.name)
+            print(child.all)
+            enumerateXML(indexer: child)
+        }
     }
 }
