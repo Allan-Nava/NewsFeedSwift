@@ -36,7 +36,9 @@ struct Post
                 
                 for item in all_items.all {
                     let single_post = Post(pubDate: item["pubDate"].element?.text, title: item["title"].element?.text, link: item["link"].element?.text, description: item["description"].element?.text)
+                    //print(single_post)
                     posts.append(single_post)
+                    print(posts)
                 }
                 
                 print(posts)
