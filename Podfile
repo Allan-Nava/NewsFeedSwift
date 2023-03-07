@@ -6,7 +6,7 @@ target 'NewFeeds' do
   use_frameworks!
 
   # Pods for NewFeeds
-  pod 'Alamofire', '~> 4.7'
+  pod 'Alamofire', '~> 5.0'
   pod 'UIColor_Hex_Swift', '~> 4.0.2'
   pod 'SWXMLHash', '~> 4.0.0'
   #
