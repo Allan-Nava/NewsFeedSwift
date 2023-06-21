@@ -8,7 +8,7 @@ target 'NewFeeds' do
   # Pods for NewFeeds
   pod 'Alamofire', '~> 4.7'
   pod 'UIColor_Hex_Swift', '~> 4.0.2'
-  pod 'SWXMLHash', '~> 4.0.0'
+  pod 'SWXMLHash', '~> 7.0.0'
   #
   target 'NewFeedsTests' do
     inherit! :search_paths
