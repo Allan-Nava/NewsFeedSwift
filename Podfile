@@ -7,7 +7,7 @@ target 'NewFeeds' do
 
   # Pods for NewFeeds
   pod 'Alamofire', '~> 4.7'
-  pod 'UIColor_Hex_Swift', '~> 4.0.2'
+  pod 'UIColor_Hex_Swift', '~> 5.1.0'
   pod 'SWXMLHash', '~> 4.0.0'
   #
   target 'NewFeedsTests' do
